@@ -18,7 +18,15 @@
         </div>
 
         <!-- Navlinks -->
-        <div class="navlinks flex flex-row gap-6">
+        <a href="" class="px-2 py-4">
+            <svg id="hamburger" width="20" height="20" viewBox="0 0 30 30" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <rect class="line top" width="30" height="4" rx="2" fill="white" />
+                <rect class="line middle" y="13" width="30" height="4" rx="2" fill="white" />
+                <rect class="line bottom" y="26" width="30" height="4" rx="2" fill="white" />
+            </svg>
+        </a>
+        <div class="hidden navlinks lg:flex flex-row gap-6">
             <a class="hover:text-gray-200 hover:underline" href="">Home</a>
             <a class="hover:text-gray-200 hover:underline" href="">About</a>
             <a class="hover:text-gray-200 hover:underline" href="">Portfolio</a>
@@ -33,11 +41,11 @@
         <!-- ilustrations -->
         <div class="relative w-full">
             <img src="./gambar/ilus-1.png"
-                class="absolute m-0 p-0 top-32 max-w-24 -rotate-30 z-0 hover:rotate-30 transition-all duration-500"
+                class="absolute m-0 p-0 lg:top-32 -top-38 max-w-24 -rotate-30 z-0 hover:rotate-30 transition-all duration-500"
                 alt="ilus">
-            <img src="./gambar/ilus-2.png"
-                class="absolute m-0 p-0 top-36 right-12 max-w-24 rotate-5 animate-bounce z-0" alt="vscode">
-            <img src="./gambar/laravel.png" class="absolute m-0 p-0 top-96 left-12 max-w-24 rotate-5 z-0" alt="ilus">
+            <img src="./gambar/ilus-2.png" class="absolute m-0 p-0 lg:top-36 -top-30 right-12 max-w-24 rotate-5 animate-bounce z-0"
+                alt="vscode">
+            <img src="./gambar/laravel.png" class="absolute m-0 p-0 lg:top-96 top-100 left-12 max-w-24 rotate-5 z-0" alt="ilus">
         </div>
 
         <header class="flex flex-col items-center justify-center w-full gap-5 z-50">
@@ -170,7 +178,7 @@
 
     <!-- featured -->
     <h1 class="text-2xl text-center font-bold mb-12">My past <span class="text-blue-400">experiences</span></h1>
-    <section id="featured" class="min-h-96 grid grid-cols-2 gap-3 py-4">
+    <section id="featured" class="min-h-96 grid lg:grid-cols-2 grid-cols-1 gap-3 py-4 lg:px-24 px-5">
 
         <!-- bg black -->
         <div class="bg-black text-white h-full flex flex-col items-center justify-center">
@@ -192,10 +200,17 @@
             <a href="https://www.topgear.com/car-reviews/porsche/911-0" target="_blank"
                 class="py-2 px-4 bg-black text-white hover:bg-transparent hover:text-black hover:border transition-all">
                 Learn More</a>
-
         </div>
 
     </section>
+
+    <footer
+        class="text-white bg-black flex lg:flex-row items-center justify-center gap-5 pt-12 lg:px-24 px-5 py-12 mt-12">
+        <p>Home</p>
+        <p>About</p>
+        <p>Portfolio</p>
+        <p>Contact</p>
+    </footer>
 
 </body>
 
